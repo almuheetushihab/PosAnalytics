@@ -41,9 +41,11 @@ import com.shihab.posanalytics.viewmodel.DashboardViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DashboardScreen(viewModel: DashboardViewModel = viewModel()) {
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .padding(16.dp)) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
 
         Text(
             "Analytics Dashboard",
@@ -184,7 +186,12 @@ fun DashboardScreen(viewModel: DashboardViewModel = viewModel()) {
 }
 
 @Composable
-fun KpiCard(title: String, amount: Double, color: Color, modifier: Modifier = Modifier) {
+fun KpiCard(
+    title: String,
+    amount: Double,
+    color: Color,
+    modifier: Modifier = Modifier
+) {
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(containerColor = color.copy(alpha = 0.1f))

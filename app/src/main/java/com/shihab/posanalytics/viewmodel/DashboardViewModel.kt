@@ -44,7 +44,7 @@ class DashboardViewModel : ViewModel() {
             amount = 12000.0,
             date = lastWeek,
             type = TransactionType.SALE
-        ) // All Time (Not this week)
+        )
     )
 
     var selectedFilter by mutableStateOf(TimeFilter.TODAY)

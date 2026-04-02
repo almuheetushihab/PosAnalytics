@@ -12,4 +12,9 @@ data class SaleRecord(
     val type: TransactionType
 )
 
-enum class TimeFilter { TODAY, YESTERDAY, THIS_WEEK, ALL_TIME }
+enum class TimeFilter {
+    TODAY,
+    YESTERDAY,
+    THIS_WEEK,
+    ALL_TIME
+}
